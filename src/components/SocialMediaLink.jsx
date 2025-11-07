@@ -1,7 +1,7 @@
 
 export default function SocialMediaLink() {
     return (
-        <div className="flex gap-2 py-2">
+        <div className="flex gap-1 py-2">
             <div className="bg-white rounded-xl border-2 border-[#ef819d]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 71 72"
                     fill="none">

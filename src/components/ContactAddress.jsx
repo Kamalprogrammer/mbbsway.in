@@ -12,7 +12,7 @@ const contactData = [
         id: 2,
         image: mail,
         title: "Email Us",
-        contactAddress: ["info@mbbsway.in", "support@mbbsway.in"],
+        contactAddress: ["info@mbbsway.in"],
 
     },
     {
@@ -25,14 +25,14 @@ const contactData = [
 
 export default function contactAddress() {
     return (
-        <div>
+        <div className="md:flex hidden items-center justify-center ">
             {contactData.map((el) => (
-                <div key={el.id} className="flex flex-col items-center justify-center">
+                <div key={el.id} className="flex flex-col items-center sm:w-[12vw] ">
                     <div className="flex items-center justify-center gap-2">
-                        <img src={el.image} className="w-7 " alt="" />
-                        <p>{el.title}</p>
+                        <img src={el.image} className="w-3" alt="" />
+                        <p className="text-[1vw] font-semibold">{el.title}</p>
                     </div>
-                    <div className="text-xl"> {el.contactAddress}</div>
+                    <div className="text-[1vw] font-semibold flex items-center justify-center"> {el.contactAddress}</div>
                 </div>
             ))}
         </div>

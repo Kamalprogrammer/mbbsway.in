@@ -14,11 +14,22 @@ export default function AllPagesRoutes() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/destination" element={<Destination />} />
+                <Route path="/course" element={<Course />} />
                 <Route path="/predictor" element={<Predictor />} />
                 <Route path="/pacakage" element={<Pacakage />} />
-                <Route path="/conctactus" element={<ConctactUs />} />
+                <Route path="/contactus" element={<ConctactUs />} />
                 <Route path="/gallery" element={<Gallery />} />
-                <Route path="/blog" element={<Blog />} />
+
+                {/* for menu bar  */}
+                <Route path="/applyonline" element={<ApplyOnline/>} />
+                <Route path="/blog" element={<Blog/>} />
+                <Route path="/login" element ={<Login/>} />
+                <Route path="/courses" element ={<Courses/>} />
+                
+                
+               
+               
+
             </Routes>
         </div>
     )
