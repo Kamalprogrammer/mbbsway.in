@@ -1,4 +1,8 @@
 import { useState } from "react"
+import Hero1 from "../assets/Hero1.png"
+import Hero2 from "../assets/Hero2.png"
+import Hero3 from "../assets/Hero3.png"
+import Hero4 from "../assets/Hero4.png"
 
 import StateBihar from "./StateBihar";
 import StateGujrat from "./Stategujrat"
@@ -9,22 +13,26 @@ const stateButton = [
     {
         id: 1,
         name: "Madhya Pradesh",
-        component: <StateMP />
+        component: <StateMP />,
+        image: Hero4
     },
     {
         id: 2,
         name: "Gujrat",
-        component: <StateGujrat />
+        component: <StateGujrat />,
+        image: Hero2
     },
     {
         id: 3,
         name: "Karnataka",
-        component: <StateKar />
+        component: <StateKar />,
+        image: Hero3
     },
     {
         id: 4,
         name: "Bihar",
-        component: <StateBihar />
+        component: <StateBihar />,
+        image: Hero1
     },
 
 
@@ -37,21 +45,43 @@ export default function SelectState() {
         setIsActive(id)
     };
     return (
-        <div>
-            {stateButton.map((el) => (
-                <button
-                    onClick={() => handleClick(el.id)}
-                    className="border-2 text-sm font-semibold border-red-500 px-5 py-1 rounded gap-5 hover:bg-linear-to-r hover:from-[#155d8e] hover:to-[#f4829d]">
-                    {el.name}
-                </button>
-            ))}
+        <div className="w-screen  border-black">
+            <div className="h-[] w-full object-cover">
+                {stateButton.map((el) => (
+                    <div>
+                        {isActive === el.id &&
+                            <div className="">
+                                <img src={el.image} alt="" className="" />
+                            </div>}
+                    </div>
+
+                ))}
+            </div>
+
+            <div className="-mt-25  gap-5 flex justify-between m-auto items-center h-30 w-[80vw]">
+
+
+                {stateButton.map((el) => (
+
+                    <button
+                        onClick={() => handleClick(el.id)}
+                        className="border-2  text-sm font-bold sm:text-[1.5vw] bg-white border-red-500 px-2 py-2 rounded
+                         hover:bg-linear-to-r hover:from-[#155d8e] hover:to-[#f4829d] w-[20vw]  ">
+                        {el.name}
+                    </button>
+
+                ))}
+
+            </div>
 
             <div>
                 {stateButton.map((el) => (
                     <div>
 
-                        {isActive === el.id && <div>
-                            {el.component}</div>}
+                        {isActive === el.id &&
+                            <div>
+                                {el.component}
+                            </div>}
                     </div>
                 ))}
             </div>
