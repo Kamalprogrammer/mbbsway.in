@@ -10,12 +10,7 @@ const mainItems = [
     { path: '/contactus', title: "Contact Us" },
     { path: '/gallery', title: "Gallery" },
     { path: '/blog', title: "Blog" },
-
-
 ]
-
-
-
 
 
 export default function ThirdMenuBar() {

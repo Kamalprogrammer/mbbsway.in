@@ -7,3 +7,39 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+  /* pause on hover */
+}
+
+
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}

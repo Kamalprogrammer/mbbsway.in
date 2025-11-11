@@ -46,7 +46,7 @@ export default function SelectState() {
     };
     return (
         <div className="w-screen  border-black">
-            <div className="h-[] w-full object-cover">
+            <div className=" w-full object-cover">
                 {stateButton.map((el) => (
                     <div>
                         {isActive === el.id &&
@@ -58,15 +58,15 @@ export default function SelectState() {
                 ))}
             </div>
 
-            <div className="-mt-25  gap-5 flex justify-between m-auto items-center h-30 w-[80vw]">
+            <div className="sm:-mt-[20vh] gap-5 grid grid-cols-2 sm:grid-cols-4 m-auto items-center sm:h-30  w-[80vw]">
 
 
                 {stateButton.map((el) => (
 
                     <button
                         onClick={() => handleClick(el.id)}
-                        className="border-2  text-sm font-bold sm:text-[1.5vw] bg-white border-red-500 px-2 py-2 rounded
-                         hover:bg-linear-to-r hover:from-[#155d8e] hover:to-[#f4829d] w-[20vw]  ">
+                        className="border-2 text-sm font-bold sm:text-[1.5vw] bg-white border-red-500 px-2 py-2 rounded
+                         hover:bg-linear-to-r hover:from-[#155d8e] hover:to-[#f4829d] w-full  ">
                         {el.name}
                     </button>
 

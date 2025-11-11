@@ -47,7 +47,7 @@ export default function StateKarnataka(){
   const [activeCard, setActiveCard] = useState(null);
 
   return (
-    <div className="grid grid-cols-2 m-auto md:grid-cols-4 gap-1 sm:gap-5 sm:w-[80vw] w-[95vw] items-center  ">
+    <div className="grid grid-cols-2 m-auto lg:grid-cols-4 gap-1 sm:gap-5 sm:w-[80vw] w-[95vw] items-center  ">
       {universities.map((item, index) => (
         <div
           key={index}

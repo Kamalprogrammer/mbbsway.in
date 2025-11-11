@@ -4,7 +4,7 @@ import BorderButton from "./BorderButton"
 const universities = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1581092334421-22f636b1cb47", 
+    image: "https://images.unsplash.com/photo-1581092334421-22f636b1cb47",
     city: "Patna",
     collegeName: "Indian Institute of Technology Patna (IIT Patna)",
     description: "IIT Patna is one of India's leading technical institutions, known for its excellence in engineering education, research, and innovation in the eastern region.",
@@ -47,7 +47,7 @@ export default function StateBihar() {
   const [activeCard, setActiveCard] = useState(null);
 
   return (
-    <div className="grid grid-cols-2 m-auto md:grid-cols-4 gap-1 sm:gap-5 sm:w-[80vw] w-[95vw] items-center  ">
+    <div className="grid grid-cols-2 m-auto lg:grid-cols-4 gap-1 sm:gap-5 sm:w-[80vw] w-[95vw] items-center  ">
       {universities.map((item, index) => (
         <div
           key={index}
