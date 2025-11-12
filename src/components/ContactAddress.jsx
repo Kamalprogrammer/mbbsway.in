@@ -25,14 +25,14 @@ const contactData = [
 
 export default function contactAddress() {
     return (
-        <div className="md:flex hidden items-center justify-center ">
+        <div className="md:flex hidden items-center justify-center 2xl:w-[50rem] ">
             {contactData.map((el) => (
-                <div key={el.id} className="flex flex-col items-center sm:w-[12vw] ">
+                <div key={el.id} className="flex flex-col items-center sm:w-[12vw] xl:w-[12rem]  2xl:w-[15rem] ">
                     <div className="flex items-center justify-center gap-2">
-                        <img src={el.image} className="w-3" alt="" />
-                        <p className="text-[1vw] font-semibold">{el.title}</p>
+                        <img src={el.image} className="w-3 xl:w-6 2xl:w-10" alt="" />
+                        <p className="text-[1vw] font-semibold xl:text-[1rem] 2xl:text-[1.5rem]">{el.title}</p>
                     </div>
-                    <div className="text-[1vw] font-semibold flex items-center justify-center"> {el.contactAddress}</div>
+                    <div className="text-[1vw] font-semibold flex items-center justify-center  xl:text-[1rem] 2xl:text-[1.5rem]"> {el.contactAddress}</div>
                 </div>
             ))}
         </div>

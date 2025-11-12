@@ -43,3 +43,50 @@ body {
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
+
+@layer utilities {
+  .svg-responsive {
+    @apply w-7 h-7 sm:w-7 sm:h-7 xl:w-7 xl:h-7 2xl:w-16 2xl:h-16;
+  }
+
+  .stateCardCity {
+    @apply font-semibold text-xl sm:text-xl xl:text-[1rem] 2xl:text-5xl leading-tight rounded-b-xl py-2 px-3 text-[3vw] sm:text-xl text-end bg-linear-to-r from-[#f4829d] to-[#155d8e] text-white font-bold;
+  }
+
+  .statePeragraph {
+    @apply text-[.7rem] xl:text-[1rem] 2xl:text-[1.25rem] mt-[2.5rem] sm:mt-[2rem] xl:mt-[3rem] 2xl:mt-[5rem] leading-relaxed tracking-normal sm:py-2 sm:px-3 text-justify line-clamp-3;
+  }
+
+  .topNavbarDivClass {
+    @apply flex text-sm gap-2 xl:text-[1rem] 2xl:text-[2.5rem]
+  }
+
+  .topNavBarIconStyle {
+    @apply w-3 xl:w-5 2xl:w-7
+  }
+
+  .btnResClass {
+    @apply xl:text-[1rem] 2xl:text-[2rem] 2xl:font-semibold 2xl:rounded-2xl text-[1rem] sm:text-[.7rem] py-2 md:py-5 sm:h-[8vh] px-4
+  }
+
+  .ServicelgBoxClass {
+    @apply lg:w-[16rem] lg:h-[12rem]
+  }
+
+  .InnerServicelgBoxClass {
+    @apply lg:w-[12rem] lg:h-[9rem]
+  }
+
+  
+
+  /* StudentService md classes  */
+  .mdTopStudentService{
+   
+  }
+  .mdBottomStudentService{
+    @apply md:pl-[20rem] md:pt-[2rem] md:w-auto md:h-[15rem]
+  }
+
+
+}

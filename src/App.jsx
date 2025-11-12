@@ -5,7 +5,7 @@ import TopUniversities from "./components/TopUniversities"
 import LinksList from "./components/LinksList"
 import FilipCard from "./components/FilipCard"
 import AutoSlider from "./components/AutoSlider"
-import ServiceBox from "./components/ServiceBox"
+import ServiceBox from "./components/Services/ServiceBox"
 function App() {
 
 

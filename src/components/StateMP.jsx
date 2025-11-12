@@ -8,7 +8,7 @@ const universities = [
     city: "Bhopal",
     collegeName: "Indian Institute of Science Education and Research (IISER Bhopal)",
     description: "IISER Bhopal is a premier institute focusing on research and education in science, offering integrated and doctoral programs with world-class facilities.",
-    universityType: "Top Research Institute",
+    universityType: "Top University",
     logo: "https://upload.wikimedia.org/wikipedia/en/8/8b/IISER_Bhopal_Logo.svg"
   },
   {
@@ -23,19 +23,19 @@ const universities = [
   {
     id: 3,
     image: "https://images.unsplash.com/photo-1596496050183-2d4b8b40a3b4",
-    city: "Indore",
+    city: "Jabalpur",
     collegeName: "Indian Institute of Management Indore (IIM Indore)",
     description: "IIM Indore is a top-ranked management institute offering MBA and executive education, known for its academic excellence and global outlook.",
-    universityType: "Top Management Institute",
+    universityType: "Top University",
     logo: "https://upload.wikimedia.org/wikipedia/en/8/83/IIM_Indore_Logo.png"
   },
   {
     id: 4,
     image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1",
-    city: "Bhopal",
+    city: "Damoh",
     collegeName: "Barkatullah University",
     description: "Barkatullah University is one of Madhya Pradesh's oldest universities, offering a wide range of courses in science, arts, commerce, and law.",
-    universityType: "Public University",
+    universityType: "Top University",
     logo: "https://upload.wikimedia.org/wikipedia/en/7/7a/Barkatullah_University_logo.png"
   }
 ];
@@ -70,8 +70,8 @@ export default function StateMP() {
                 <p className='font-semibold text-[3vw] sm:text-xl py-2'>{item.universityType}</p>
                 <div className='flex items-start justify-center gap-3 w-full'>
                   <span className='font-bold text-[3vw] sm:text-xl'>{item.id}</span>
-                  <img src={item.image} className='w-[20%]' alt="" />
-                  <p className='text-[3vw] sm:text-xl '>{item.collegeName}</p>
+                  <img src={item.image} className='w-[20%] rounded-full object-cover' alt="" />
+                  <p className=' text-[3vw] sm:text-xl '>{item.collegeName}</p>
                 </div>
                 <BorderButton text={"Explore More"} />
 
@@ -81,14 +81,14 @@ export default function StateMP() {
               :
 
               // default card
-              <div className=' h-full p-2 shadow-gray-800  '>
-                <div className=' h-[50%] w-full' >
+              <div className='h-full p-1 shadow-gray-800  '>
+                <div className='h-[50%] w-full' >
                   <img src={item.image} alt="" className='h-[100%] w-full object-cover rounded-t-xl' />
-                  <p className='rounded-b-xl py-2 px-3 text-[3vw] sm:text-xl text-end bg-linear-to-r from-[#f4829d] to-[#155d8e] text-white font-bold'>
+                  <p className='stateCardCity'>
                     {item.city}</p>
                 </div>
 
-                <p className='sm:py-2 sm:px-3 text-[3vw] sm:text-xl text-justify top-10 mt-13 line-clamp'>{item.description}</p>
+                <p className='statePeragraph'>{item.description}</p>
 
 
 

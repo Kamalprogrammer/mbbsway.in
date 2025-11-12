@@ -12,7 +12,7 @@ import StateMP from "./StateMP"
 const stateButton = [
     {
         id: 1,
-        name: "Madhya Pradesh",
+        name: "MP",
         component: <StateMP />,
         image: Hero4
     },
@@ -46,7 +46,8 @@ export default function SelectState() {
     };
     return (
         <div className="w-screen  border-black">
-            <div className=" w-full object-cover">
+            {/* Image Section  */}
+            <div className="w-full object-cover">
                 {stateButton.map((el) => (
                     <div>
                         {isActive === el.id &&
@@ -58,15 +59,14 @@ export default function SelectState() {
                 ))}
             </div>
 
-            <div className="sm:-mt-[20vh] gap-5 grid grid-cols-2 sm:grid-cols-4 m-auto items-center sm:h-30  w-[80vw]">
 
-
+            {/* state Selection Section */}
+            <div className="2xl:-mt-28  xl:-mt-24 lg:-mt-22 md:-mt-[5.2rem] 2xl:mb-20 xl:mb-8 sm:-mt-[20vh] gap-2 mt-2 sm:gap-5 grid grid-cols-2 sm:grid-cols-4 m-auto items-center sm:h-30 w-[80vw]">
                 {stateButton.map((el) => (
-
                     <button
                         onClick={() => handleClick(el.id)}
                         className="border-2 text-sm font-bold sm:text-[1.5vw] bg-white border-red-500 px-2 py-2 rounded
-                         hover:bg-linear-to-r hover:from-[#155d8e] hover:to-[#f4829d] w-full  ">
+                         hover:bg-linear-to-r hover:from-[#155d8e] hover:to-[#f4829d] w-full ">
                         {el.name}
                     </button>
 
@@ -74,6 +74,7 @@ export default function SelectState() {
 
             </div>
 
+{/* Component Display Section */}
             <div>
                 {stateButton.map((el) => (
                     <div>

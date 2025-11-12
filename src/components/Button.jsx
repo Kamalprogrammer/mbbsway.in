@@ -1,12 +1,16 @@
 import { PhoneArrowDownLeftIcon } from "@heroicons/react/20/solid"
-export default function Button({ text, icon,className }) {
+export default function Button({ text, icon, className, type }) {
     return (
-        <div className="py-2 md:py-5 sm:h-[8vh] px-1 w-[50vw] sm:w-[30vw] md:w-[15vw] lg:[35vw] flex items-center justify-center gap-2 rounded text-white bg-linear-to-r from-[#225678] to-[#e2466a]">
-            {icon}
-            <button className="text-[3vw] md:text-[1vw] ">
-                {text}
-            </button>
-        </div>
+        <button
+            type={type}
+            className="w-full  flex items-center justify-center gap-2 
+             rounded text-white bg-gradient-to-r from-[#225678] to-[#e2466a] 
+               hover:opacity-90 transition-all duration-200 btnResClass
+            "
+        >
+            {icon} {text}
+        </button>
+
 
     )
 }
