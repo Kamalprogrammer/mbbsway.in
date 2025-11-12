@@ -2,21 +2,24 @@ import ServiceBox from "../Services/ServiceBox"
 import backImg from "../../assets/services/backImg.png"
 import UnderlineHeading from "../UnderlineHeading"
 import Button from "../Button"
-const studentData = [
+const cardData = [
     {
-        title: "Counselling",
-        description: "Our counselling sessions will immensely benefit you in making..."
-    },
-    {
-        title: "Course, State & University selection",
-        description: "We help you choose the ideal course, university state that..."
-    },
-    {
-        title: "Application & Admission",
-        description: "Choose the right intake, apply timely and smartly in courses and..."
-    },
+        title: "Commissions",
+        description: "Get faster and higher commissions experience complete transparency...",
 
-]
+    },
+    {
+        title: "Empowering You",
+        description: "Attend webinars by MBBSWALA Experts and University Delegates to...",
+
+    },
+    {
+        title: "A Team that Understands your Needs",
+        description: "Receive comprehensive handholding and support from our...",
+
+    },
+];
+
 export default function StudentService() {
     return (
 
