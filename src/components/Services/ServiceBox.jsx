@@ -9,11 +9,7 @@ import { PiStudent } from "react-icons/pi"
 import UnderlineHeading from "../UnderlineHeading"
 
 
-
-
-
-
-export default function ServiceBox() {
+export default function ServiceBox({ title, description, icon }) {
     return (
         <div className="ServiceBox h-full flex ">
             <div className="ServicelgBoxClass relative bg-white  h-[4rem] w-[8rem] sm:w-[15rem] sm:h-[12rem] md:h-[11rem] " >
@@ -29,12 +25,15 @@ export default function ServiceBox() {
                         <img src={blue} alt="" className="w-full" />
                     </div>
                 </div>
-                <div className="InnerServicelgBoxClass text absolute flex justify-center items-center top-2.25 right-4  sm:top-5 sm:right-8 w-[6rem] h-[4.5rem] sm:w-[10rem] sm:h-[8rem]  ">
-                    <div className="border-6 border-b-pink-300 border-r-pink-300 border-l-0 border-t-0 h-full w-full ">
-                        <div className="text-center w-full h-full m-auto flex flex-col justify-center items-center">
-                            <div><PiStudent className="sm:w-[4rem] sm:h-[4rem]" /></div>
-                            <p className="text-[.5rem]  font-semibold sm:text-sm">Title</p>
-                            <p className="text-[.5rem] sm:text-sm ">description</p>
+                <div className="InnerServicelgBoxClass text absolute flex justify-center items-center top-2.25 right-4  sm:top-3 sm:right-5 
+                w-[6rem] h-[4.5rem] sm:w-[12rem] sm:h-[9rem]  ">
+                    <div className=" border-2 sm:border-4 border-b-pink-300 border-r-pink-300 border-l-0 border-t-0 h-full w-full ">
+                        <div className="text-center w-full h-full m-auto flex flex-col justify-center items-center p-1">
+                            <div className="" >
+                                {icon}
+                            </div>
+                            <p className="text-[.5rem] font-semibold sm:text-sm">{title}</p>
+                            <p className="text-[.3rem] sm:text-[.7rem] ">{description}</p>
                         </div>
                     </div>
                 </div>

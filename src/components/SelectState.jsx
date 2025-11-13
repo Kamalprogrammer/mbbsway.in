@@ -3,12 +3,10 @@ import Hero1 from "../assets/Hero1.png"
 import Hero2 from "../assets/Hero2.png"
 import Hero3 from "../assets/Hero3.png"
 import Hero4 from "../assets/Hero4.png"
-
-import StateBihar from "./StateBihar";
+import StateBihar from "./StateBihar"
 import StateGujrat from "./Stategujrat"
 import StateKar from "./StateKarnataka"
 import StateMP from "./StateMP"
-
 const stateButton = [
     {
         id: 1,
@@ -34,8 +32,6 @@ const stateButton = [
         component: <StateBihar />,
         image: Hero1
     },
-
-
 ];
 
 
@@ -74,7 +70,7 @@ export default function SelectState() {
 
             </div>
 
-{/* Component Display Section */}
+            {/* Component Display Section */}
             <div>
                 {stateButton.map((el) => (
                     <div>

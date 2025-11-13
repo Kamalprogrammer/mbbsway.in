@@ -10,23 +10,26 @@ import VideoBox from "./VideoBox";
 import AutoSlider from "../AutoSlider";
 import ServiceSection from "./ServiceSection";
 import NeetConsultancy from "./NeetConsultancy";
-
-export default function Home(){
-    return(
+import WorkFlow from "./WorkFlow";
+import Consultation from "./Consultation";
+export default function Home() {
+    return (
         <section>
-            <TopNavbar/>
-            <SecondNavbar/>
-            <ThirdMenuBar/>
-            <HeroSection/>
-            <LinkSection/>
-            <FilipCard/>
-            <AboutUs/>
-            <VideoBox/>
-            <AutoSlider/>
-           <ServiceSection/>
-           <NeetConsultancy/>
-           
-            
+            <TopNavbar />
+            <SecondNavbar />
+            <ThirdMenuBar />
+            <HeroSection />
+            <LinkSection />
+            <FilipCard />
+            <AboutUs />
+            <VideoBox />
+            <AutoSlider />
+            <ServiceSection />
+            <NeetConsultancy />
+            <WorkFlow />
+            <Consultation />
+
+
         </section>
     )
 }

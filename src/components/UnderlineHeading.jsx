@@ -33,7 +33,7 @@ export default function UnderlineHeading({ text }) {
       {/* Text */}
       <div
         ref={textRef}
-        className="text-3xl font-extrabold text-black leading-snug text-center md:text-left max-w-[80vw]"
+        className="text-2xl text-start  sm:text-3xl font-extrabold text-black leading-snug  md:text-left xl:text-4xl 2xl:text-7xl "
       >{text}
       </div>
 

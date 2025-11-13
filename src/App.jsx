@@ -6,6 +6,9 @@ import LinksList from "./components/LinksList"
 import FilipCard from "./components/FilipCard"
 import AutoSlider from "./components/AutoSlider"
 import ServiceBox from "./components/Services/ServiceBox"
+import WorkFlowCard from "./components/WorkFlowCard"
+import Consultation from "./components/pages/Consultation"
+import ContactCard from "./components/ContactCard"
 function App() {
 
 
@@ -16,9 +19,10 @@ function App() {
     {/* <AutoSlider/> */}
 
     {/* <ServiceBox/> */}
+    {/* <WorkFlowCard/> */}
 
-  
-    
+  {/* <Consultation/> */}
+    {/* <ContactCard/> */}
    
 
    </div>
